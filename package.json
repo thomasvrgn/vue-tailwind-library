@@ -1,0 +1,36 @@
+{
+  "name": "vue-tailwind-library",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-tailwind-library.umd.js",
+  "module": "./dist/vue-tailwind-library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-tailwind-library.es.js",
+      "require": "./dist/vue-tailwind-library.umd.js"
+    }
+  },
+  "dependencies": {
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "postcss-import": "^14.0.2",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "style-inject": "^0.3.0",
+    "tailwindcss": "^3.0.0-alpha.1",
+    "vite": "^2.6.4"
+  }
+}
